@@ -111,7 +111,7 @@ img {
   color: #404bbf;
 }
 .section-title {
-  padding: 188px 292px;
+  padding: 188px 0;
   background: #2e2f42;
 }
 .title {
@@ -151,6 +151,7 @@ img {
 }
 .list {
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -158,9 +159,13 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
+
   white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .section-item {
   width: calc((100% - 72px) / 4);
 }
