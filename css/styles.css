@@ -1,22 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
 a {
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
+img {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+}
+.section {
+  padding: 120px 0;
+}
 .header {
+  padding: 24px 156px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
   color: #4d5ae5;
@@ -26,11 +61,15 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-part {
   color: #2e2f42;
 }
 .menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 .nav-link {
   color: #2e2f42;
@@ -50,6 +89,11 @@ ol {
 .address {
   font-style: normal;
 }
+.header-address {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .address-link {
   color: #434455;
   font-size: 16px;
@@ -63,8 +107,12 @@ ol {
 .address-link:focus {
   color: #404bbf;
 }
+.section-title {
+  padding: 0;
+}
 .title {
   background: #2e2f42;
+  padding: 188px 292px;
 }
 .title-text {
   color: #fff;
@@ -73,14 +121,21 @@ ol {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .btn-title {
+  display: block;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
   color: #fff;
   background: #4d5ae5;
+  padding: 16px 32px;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 .btn-title:hover {
   background: #404bbf;
@@ -90,14 +145,29 @@ ol {
 }
 .list {
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .section-list-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .section-list {
+  display: flex;
+  gap: 24px;
+  max-width: calc((100% - 24 * 3) / 4);
 }
 .section-list-text {
   color: #434455;
@@ -105,7 +175,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.team {
+.team-content {
   background-color: #f4f4fd;
 }
 .team-title {
@@ -116,11 +186,18 @@ ol {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-list-card {
   background-color: #fff;
+  padding-bottom: 32px;
 }
 .team-list img {
+  margin-bottom: 32px;
 }
 .team-list-title {
   color: #2e2f42;
@@ -129,6 +206,7 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-list-text {
   color: #434455;
@@ -147,6 +225,16 @@ ol {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.portfolio-list-content {
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-list-card {
   background: #fff;
@@ -166,12 +254,15 @@ ol {
 }
 .footer-content {
   background: #2e2f42;
+  padding: 100px 0;
 }
 .footer-text {
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 18px;
+  max-width: 264px;
 }
 .logo-footer {
   color: #f4f4fd;
